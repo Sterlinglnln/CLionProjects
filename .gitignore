@@ -1,0 +1,85 @@
+### CLion / IntelliJ ###
+.idea/
+cmake-build-*/
+out/
+# JetBrains部署和远程工具缓存
+deployment/
+.remote/
+
+### CMake ###
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+compile_commands.json
+
+### Ninja ###
+.ninja_deps
+.ninja_log
+
+### Build Artifacts ###
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.libs
+*.so
+*.so.*
+*.dylib
+*.dll
+*.lib
+*.a
+*.exe
+*.out
+*.app
+
+### Debug / Release outputs ###
+/debug/
+/release/
+/bin/
+/build/
+/build-debug/
+/build-release/
+
+### Auto-generated files ###
+*.generated.h
+*.moc
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+### Logs ###
+*.log
+
+### C/C++ ###
+*.d
+*.gcda
+*.gcno
+*.gcov
+
+### CLangd (若使用) ###
+.cache/
+.clangd/
+
+### vcpkg (如果你使用 vcpkg) ###
+/vcpkg_installed/
+/vcpkg_buildtrees/
+/vcpkg_downloads/
+
+### VS Toolchain (CLion 会调用 MSVC 时可能出现) ###
+*.pdb
+*.ipdb
+*.iobj
+
+### macOS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+/build*/
+/build/
+
+### vscode ###
+.vscode/
