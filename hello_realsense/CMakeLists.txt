@@ -6,7 +6,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # realsense2
 find_package(realsense2 REQUIRED)
+find_package(lz4 REQUIRED)
 
 add_executable(hello_realsense main.cpp)
 
-target_link_libraries(hello_realsense PRIVATE realsense2::realsense2)
+target_link_libraries(hello_realsense PRIVATE
+        realsense2::realsense2
+        lz4::lz4
+)
