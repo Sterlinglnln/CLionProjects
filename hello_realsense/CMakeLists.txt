@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # realsense2
-find_package(realsense2 REQUIRED)
-find_package(lz4 REQUIRED)
+find_package(realsense2 CONFIG REQUIRED)
+find_package(lz4 CONFIG REQUIRED)
 
 add_executable(hello_realsense main.cpp)
 
